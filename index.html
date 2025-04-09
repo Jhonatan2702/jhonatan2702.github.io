@@ -1,93 +1,57 @@
 <!DOCTYPE html>
-<html lang="Pt-BR">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jhonatan Oliveira</title>
     <link rel="stylesheet" href="style.css">
-
     <link rel="icon" href="Images/logo.png" type="image/x-icon">
-
-
 </head>
-<style>
-    * {
-        -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
-        -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
-        outline: none !important;
-    }
-</style>
 
 <body>
-    <!-- Loading Screen -->
-    <div id="loading-screen">
-        <div class="loader"></div>
-    </div>
     <div class="card">
-        <div class="profile reveal">
-            <img src="Images/foto.jpg" alt="Profile Image" class="profile-image">
-            <h1 class="header-name">Jhonatan Oliveira</h1>
-            <h5 class="header-title" style="font-weight: normal;">Analista de Negócios</h5>
+        <!-- Foto e Nome -->
+        <div class="profile">
+            <img src="Images/foto.jpg" alt="Foto de Perfil" class="profile-image">
+            <h1 class="name">Jhonatan Oliveira</h1>
+            <h2 class="title">Analista de Negócios</h2>
+            <p class="about">
+                Sou Analista de Negócios com experiência em análise de dados, automação de processos e desenvolvimento de soluções personalizadas. Minha missão é transformar dados em insights e criar ferramentas que otimizem o desempenho empresarial.
+            </p>
         </div>
-        <div class="spacer" style="height: 100px;"></div>
-        <div class="contact-info reveal">
-            <a href="https://github.com/" class="contact-link">
-                <div class="contact-item">
-                    <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="filter: invert(1);">
-                    <span>GitHub</span>
-                </div>
+
+        <!-- Botões de Contato -->
+        <div class="contact-buttons">
+            <a href="https://wa.me/+5585992668304" target="_blank" class="contact-button whatsapp">
+                <img src="Images/whatsapp (2).svg" alt="WhatsApp"> WhatsApp
             </a>
-            <a href="https://www.instagram.com/jhonatan.oliveira.tst" class="contact-link">
-                <div class="contact-item">
-                    <img class="icon" src="Images/instagram (1).svg" alt="Instagram">
-                    <span>Instagram</span>
-                </div>
+            <a href="https://github.com/jhonatan2702" target="_blank" class="contact-button github">
+                <img src="Images/github.svg" alt="GitHub"> GitHub
             </a>
-            <a href="https://wa.me/+5585992668304" class="contact-link">
-                <div class="contact-item">
-                    <img class="icon" src="Images/whatsapp (2).svg" alt="WhatsApp">
-                    <span>WhatsApp</span>
-                </div>
+            <a href="https://www.instagram.com/jhonatan.oliveira.tst" target="_blank" class="contact-button instagram">
+                <img src="Images/instagram (1).svg" alt="Instagram"> Instagram
             </a>
-            <a href="mailto:tradesolutiontools@gmail.com" class="contact-link"></a>
-                <div class="contact-item">
-                    <img class="icon" src="Images/envelope-regular.svg" alt="Gmail">
-                    <span>Gmail</span>
-                </div>
+            <a href="https://www.linkedin.com/in/jhonatan-oliveira-0b24aa123/" target="_blank" class="contact-button linkedin">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="background-color: white; border-radius: 5px;"> LinkedIn
+            </a>
+            <a href="https://www.facebook.com/jhonatan.oliveira.9081" target="_blank" class="contact-button facebook">
+                <img src="Images/facebook.svg" alt="Facebook"> Facebook
             </a>
         </div>
 
+        <!-- Clientes Atendidos -->
+        <div class="clients">
+            <h2 class="clients-title">Clientes Atendidos</h2>
+            <div class="clients-logos">
+                <img src="Images/parceiro-1.png" alt="Cliente 1" class="client-logo">
+                <img src="Images/parceiro-2.png" alt="Cliente 2" class="client-logo">
+                <img src="Images/parceiro-3.png" alt="Cliente 3" class="client-logo">
+                <img src="Images/parceiro-4.png" alt="Cliente 4" class="client-logo">
+                <img src="Images/parceiro-5.png" alt="Cliente 4" class="client-logo">
+            </div>
+        </div>
     </div>
-    <script>
-        window.addEventListener('load', function () {
-            const loadingScreen = document.getElementById('loading-screen');
-            setTimeout(function () {
-                loadingScreen.style.display = 'none';
-            },); // Adds a 1-second delay for debugging
-        });
-
-        document.addEventListener('DOMContentLoaded', function () {
-            const elements = document.querySelectorAll('.reveal');
-
-            const revealOnScroll = function () {
-                for (let i = 0; i < elements.length; i++) {
-                    let windowHeight = window.innerHeight;
-                    let elementTop = elements[i].getBoundingClientRect().top;
-                    let elementVisible = 150;
-
-                    if (elementTop < windowHeight - elementVisible) {
-                        elements[i].classList.add('reveal-active');
-                    } else {
-                        elements[i].classList.remove('reveal-active');
-                    }
-                }
-            };
-
-            window.addEventListener('scroll', revealOnScroll);
-            revealOnScroll(); // Initial check on page load
-        });
-    </script>
 </body>
 
 </html>
