@@ -8,9 +8,9 @@ body {
     background-color: #010101;
     font-family: Arial, sans-serif;
     background-size: cover;
-    background-size: 200%;
+    background-size: 100%;
     background-position: center;
-    background-image: url(Images/foto.jpg);
+    background-image: url(Images/logo.png);
 }
 
 .card {
