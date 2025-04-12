@@ -1,0 +1,192 @@
+/* Ajuste geral para o body */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #000000, #1a1a1a);
+    color: white;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: block; /* Garante que os elementos sejam exibidos em bloco */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background: #333333;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%; /* Garante que a navbar ocupe toda a largura */
+}
+
+.nav-link {
+    color: #f7e479;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+/* Cabeçalho */
+header, .experiencias, .projetos {
+    max-width: 1200px; /* Limita a largura máxima */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 16px;
+    color: #dddddd;
+}
+
+/* Seção de Experiências */
+.experiencias {
+    padding: 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f7e479;
+    margin-bottom: 20px;
+}
+
+.experiencias-grid, .projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsivo */
+    gap: 20px; /* Espaço entre os itens */
+    padding: 20px;
+}
+
+.experiencia-card, .projeto-card {
+    background: #333333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+.experiencia-card h3 {
+    font-size: 20px;
+    color: #f7e479;
+    margin-bottom: 10px;
+}
+
+/* Seção de Projetos */
+.projetos {
+    padding: 20px;
+    text-align: center;
+}
+
+.projeto-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.projeto-card h3 {
+    font-size: 20px;
+    color: #f7e479;
+    margin-bottom: 10px;
+}
+
+.projeto-card p {
+    font-size: 14px;
+    color: #dddddd;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #f7e479;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #e6c84f;
+}
+
+/* Seção Objetivo */
+.objetivo {
+    padding: 20px;
+    text-align: center;
+}
+
+.objetivo p {
+    font-size: 16px;
+    color: #dddddd;
+    line-height: 1.6;
+}
+
+/* Seção Habilidades */
+.habilidades-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    text-align: left;
+}
+
+.habilidades-list li {
+    font-size: 16px;
+    color: white;
+    position: relative;
+    padding-left: 20px;
+}
+
+.habilidades-list li::before {
+    content: "✔";
+    color: #f7e479;
+    position: absolute;
+    left: 0;
+    font-size: 14px;
+}
+
+/* Seção Escolaridade */
+.escolaridade-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.escolaridade-card {
+    background: #333333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background: #222222;
+    color: #cccccc;
+    font-size: 14px;
+    width: 100%; /* Garante que o rodapé ocupe toda a largura */
+}
