@@ -10,7 +10,7 @@ body {
     background-image: url("https://img.lovepik.com/background/20211021/large/lovepik-golden-texture-texture-background-image_401656460.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background: linear-gradient(180deg, #000000, #1a1a1a);
+
     color: white;
     display: flex;
     justify-content: center;
@@ -22,6 +22,7 @@ body {
 /* Card principal */
 .card {
     background: linear-gradient(145deg, #000000, #333333);
+    opacity: 0.9;
     border-radius: 15px;
     padding: 30px;
     width: 100%;
